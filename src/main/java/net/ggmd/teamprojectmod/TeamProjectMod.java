@@ -1,6 +1,8 @@
 package net.ggmd.teamprojectmod;
 
 import com.mojang.logging.LogUtils;
+import net.ggmd.teamprojectmod.block.ModBlocks;
+import net.ggmd.teamprojectmod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -28,6 +30,8 @@ public class TeamProjectMod
     public TeamProjectMod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
