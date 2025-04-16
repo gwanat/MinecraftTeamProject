@@ -23,7 +23,7 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TeamProjectMod.MOD_ID);
 
     public static final RegistryObject<Block> GLACIER_ORE = registerBlock("glacier_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.SNOW)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.AMETHYST)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
