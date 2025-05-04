@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "glacier_ingot",
+  "ingredient": {
+    "item": "teamprojectmod:glacier_shard"
+  },
+  "result": "minecraft:iron_ingot"
+}
