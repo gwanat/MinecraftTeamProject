@@ -19,6 +19,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.project_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.GLACIER_ORE.get());
+                        pOutput.accept(ModItems.GLACIER_SHARD.get());
                     })
                     .build());
 
