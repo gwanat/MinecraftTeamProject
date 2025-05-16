@@ -7,5 +7,5 @@
   "ingredient": {
     "item": "teamprojectmod:glacier_shard"
   },
-  "result": "minecraft:iron_ingot"
+  "result": "teamprojectmod:glacier_ingot"
 }

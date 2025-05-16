@@ -12,7 +12,8 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, TeamProjectMod.MOD_ID);
     public static final RegistryObject<Item> GLACIER_SHARD = ITEMS.register("glacier_shard",
             () -> new Item(new Item.Properties()));
-            
+    public static final RegistryObject<Item> GLACIER_INGOT = ITEMS.register("glacier_ingot",
+            () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_BRICK = ITEMS.register("raw_brick",
             () -> new Item(new Item.Properties()));
 
