@@ -1,6 +1,8 @@
 package net.ggmd.teamprojectmod;
 
 import com.mojang.logging.LogUtils;
+import net.ggmd.teamprojectmod.block.ModBlocks;
+import net.ggmd.teamprojectmod.item.ModCreativeModTabs;
 import net.ggmd.teamprojectmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,12 +33,16 @@ public class TeamProjectMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+
+        ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
 
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
-
         modEventBus.addListener(this::addCreative);
 
     }
@@ -51,6 +57,14 @@ public class TeamProjectMod
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.RAW_BRICK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.GLACIER_SHARD);
+        }
+      
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.GLACIER_ORE);
         }
     }
 
