@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "teamprojectmod:glacier_block"
+    }
+  ],
+  "result": {
+    "item": "teamprojectmod:glacier_ingot",
+    "count": 9
+  }
+}
