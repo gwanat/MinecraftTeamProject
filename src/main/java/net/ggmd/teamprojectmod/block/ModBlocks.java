@@ -24,6 +24,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> GLACIER_ORE = registerBlock("glacier_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.AMETHYST)));
+    public static final RegistryObject<Block> GLACIER_BLOCK = registerBlock("glacier_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,6 +1,9 @@
 {
   "block.teamprojectmod.glacier_ore": "Glacier Ore",
   "item.teamprojectmod.glacier_shard": "Glacier Shard",
+  "item.teamprojectmod.glacier_ingot": "Glacier Ingot",
   "item.teamprojectmod.raw_brick": "Fire Brick",
+  "block.teamprojectmod.glacier_block": "Glacier Block",
+
   "creativetab.project_tab": "Project Tab"
 }
