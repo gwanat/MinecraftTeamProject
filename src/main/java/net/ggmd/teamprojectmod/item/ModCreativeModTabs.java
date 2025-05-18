@@ -22,6 +22,11 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.GLACIER_SHARD.get());
                         pOutput.accept(ModItems.GLACIER_INGOT.get());
                         pOutput.accept(ModBlocks.GLACIER_BLOCK.get());
+                        pOutput.accept(ModItems.GLACIER_HELMET.get());
+                        pOutput.accept(ModItems.GLACIER_CHESTPLATE.get());
+                        pOutput.accept(ModItems.GLACIER_LEGGINS.get());
+                        pOutput.accept(ModItems.GLACIER_BOOTS.get());
+
                     })
                     .build());
 
