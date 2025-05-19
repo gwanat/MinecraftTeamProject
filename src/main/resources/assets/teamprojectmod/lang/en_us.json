@@ -4,6 +4,8 @@
   "item.teamprojectmod.glacier_ingot": "Glacier Ingot",
   "item.teamprojectmod.raw_brick": "Fire Brick",
   "block.teamprojectmod.glacier_block": "Glacier Block",
-
+  "item.teamprojectmod.glacier_helmet": "Glacier Helmet",
+  "item.teamprojectmod.glacier_chestplate": "Glacier Chestplate",
+  "item.teamprojectmod.glacier_leggins": "Glacier Leggins",
   "creativetab.project_tab": "Project Tab"
 }
