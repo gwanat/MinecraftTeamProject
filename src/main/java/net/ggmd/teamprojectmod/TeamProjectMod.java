@@ -33,9 +33,6 @@ public class TeamProjectMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
-
-        ModItems.register(modEventBus);
-
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
@@ -63,9 +60,15 @@ public class TeamProjectMod
 
             event.accept(ModItems.GLACIER_SHARD);
         }
+
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.GLACIER_INGOT);
+        }
+      
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.GLACIER_ORE);
         }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

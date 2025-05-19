@@ -20,6 +20,8 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.GLACIER_ORE.get());
                         pOutput.accept(ModItems.GLACIER_SHARD.get());
+                        pOutput.accept(ModItems.GLACIER_INGOT.get());
+                        pOutput.accept(ModBlocks.GLACIER_BLOCK.get());
                     })
                     .build());
 
