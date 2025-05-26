@@ -1,6 +1,7 @@
 package net.ggmd.teamprojectmod.item;
 
 import net.ggmd.teamprojectmod.TeamProjectMod;
+import net.ggmd.teamprojectmod.item.custom.ModFoods;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -27,6 +28,8 @@ public class ModItems {
     public static final RegistryObject<Item> GLACIER_BOOTS = ITEMS.register("glacier_boots",
             () -> new ArmorItem(ModArmorMaterials.GLACIER_INGOT, ArmorItem.Type.BOOTS, new Item.Properties()));
 
+    public static final RegistryObject<Item> WSIZSANWICH = ITEMS.register("wsizsandwich",
+            () -> new Item(new Item.Properties().food(ModFoods.WSIZSANDWICH)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
