@@ -33,7 +33,6 @@ public class TeamProjectMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
-
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
@@ -56,10 +55,9 @@ public class TeamProjectMod
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItems.RAW_BRICK);
-        }
 
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.RAW_BRICK);
+
             event.accept(ModItems.GLACIER_SHARD);
         }
 
