@@ -27,6 +27,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.GLACIER_LEGGINS.get());
                         pOutput.accept(ModItems.GLACIER_BOOTS.get());
                         pOutput.accept(ModItems.WSIZSANWICH.get());
+                        pOutput.accept(ModItems.KOSA.get());
 
                     })
                     .build());
