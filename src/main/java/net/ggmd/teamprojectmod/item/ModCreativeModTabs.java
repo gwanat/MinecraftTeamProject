@@ -29,6 +29,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.WSIZSANWICH.get());
                         pOutput.accept(ModItems.SUPER_SHOVEL.get());
                         pOutput.accept(ModItems.KOSA.get());
+                        pOutput.accept(ModItems.PORTAL_STICK.get());
 
                     })
                     .build());
