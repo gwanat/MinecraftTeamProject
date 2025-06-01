@@ -68,6 +68,9 @@ public class TeamProjectMod
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.GLACIER_ORE);
         }
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.KOSA);
+        }
 
     }
 
